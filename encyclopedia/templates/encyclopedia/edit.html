@@ -1,0 +1,27 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Editing: {{title_info}}
+{% endblock title %}
+
+{% block body %}
+
+<div class='heading'>
+    <h1> Now editing: {{title_info}} </h1><!-- Placeholder-->
+</div>
+<br>
+<div class='editing_area'>
+    <form action= "{% url 'ency:edit' title_info %}" method='POST'>
+        {% csrf_token %}
+        {% comment %} <input type="hidden" name='entry' name='{{title_info}}'>
+        <textarea name="edit_text_area" id="" cols="30" rows="10" required>{{body_info}}</textarea> {% endcomment %} <!-- Revison 1: Building group up with only HTML form-->
+        
+        {{ form }} <!-- RFER 17 --> <!-- Revison 2 -->
+        <br>
+        <input type="submit">
+    </form>
+    
+</div>
+
+{% endblock body %}
+

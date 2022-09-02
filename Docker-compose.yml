@@ -1,0 +1,29 @@
+# use command in Docker-compose.yml's folder:
+## docker compose up
+## docker compose down
+
+version: '3.8'
+
+services:
+
+  python-docker:
+    build: .
+
+    volumes:
+      - pytest_docker_data:/usr/src/app/reports/
+
+    container_name: cs50w_wiki
+
+    restart: on-failure
+
+    # # For testing only... Purpose: See how the directory is organized
+    # ## At the moment, 
+    # command: ["ls"]
+
+    # primary command
+    ## "--lf": runs failed tests first
+    ## "l": lists variables and their assigned values
+    command: ["pytest",'-n','3', "-v", "--lf", "-l", "--suppress-tests-failed-exit-code", "--continue-on-collection-errors","--junitxml=reports/results.xml"]
+  
+volumes:
+  pytest_docker_data:

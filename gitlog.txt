@@ -1,0 +1,2243 @@
+commit 5737ffc4c7f26883fe8d2e9c3e8c57baf715624b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Sep 2 13:24:13 2022 -0700
+
+    UPDATE:
+    > requirements.txt
+    - Included necessary pips to run Wiki project
+
+commit 24c1e81f63b59eecac5269892c1ea28504e3afac
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Sep 2 13:00:43 2022 -0700
+
+    TESTS:
+    - Wrote more tests for Playwright
+    
+    LOG:
+    - Wrote about how to TDD with Django's test toolkit and Playwright
+
+commit 90eac1fec7cc644dffdc768454f62886b95edf0e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Sep 2 12:24:11 2022 -0700
+
+    TEST:
+    > pytest.fixture: setup_create_page
+
+commit cb7d6fb7c3e992a2a2c25a2b8833917d9b0ed774
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Sep 2 12:12:02 2022 -0700
+
+    TESTS:
+    > test_wiki_playwirght.py
+    - Playwright tests via pytests now work...
+    ... reason was Pylenium conflicted with Playwright
+
+commit cc961dca1dc71de29a06b19abd2c5e5b738cf0ff
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Sep 2 12:03:54 2022 -0700
+
+    REMOVE:
+    - Pylenium tests and files; testing Playwright instead
+
+commit 9f135777b6ed3a6f5ed68a1e6ff06dd958b6ecef
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 31 11:46:07 2022 -0700
+
+    CHANGE:
+    > tests
+    - Separated tests for Pylenium into their own module for easier viewing
+
+commit 1839f85b0ee4c1932c114416db27ba251a587cf7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 31 11:40:44 2022 -0700
+
+    UPDATE
+    > geckodriver.log
+    - Ran several tests attempting a new way to test for Python links, but it did not work
+
+commit 9a55f364d5b9cb22e1afb0f52987dcc2235a43ac
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 15:55:29 2022 -0700
+
+    ENDING SESH:
+    > pylenium.json
+    - Changed it to use Firefox
+    
+    *** Next time ***
+    - Write more tests with Pylenium for practice.
+    - Wrote blog post on experience about wiki project
+
+commit 027c0bf65c80b2fb783e734206e1f02a5432bb2f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 15:39:44 2022 -0700
+
+    PASS
+    > test_wiki.test_pylenium_search_results()
+    - Tested for search that immediately redirects to input's entry
+
+commit df250ca68eccaa8d8ab1f50e10619d471fcd0dcf
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 15:17:20 2022 -0700
+
+    ADDED
+    > test_wiki.test_pylenium_302_python
+    - Wrote test that goes through inputing a substring, and clicking on correct link that directs to Python entry,
+
+commit 198ae13afec80897c309931d600c50ec3dde4a89
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 14:51:33 2022 -0700
+
+    CHANGE:
+    - changed Dockerfile to copy everything within it's directory
+
+commit 68355ca327806ad3085f59d950cf6385eb9df4f0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 13:17:20 2022 -0700
+
+    UPDATED
+
+commit 48e9aa751fb5a7bcb1ce7b8595007c6c33f37d8e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 13:12:39 2022 -0700
+
+    Updated:
+    
+    - Re-initiated pytest.ini
+
+commit b70b0f9467eca56b3db2394437f1a3c7c18b7ee9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 12:33:04 2022 -0700
+
+    FIX: TEST
+    > test_wiki.test_statuscode_302_redirected_to_entry_page
+    - Wrote new test for Redirects(302); using pytest-django's 'assessRedirects'
+
+commit 47d494ee313da2ad2ae3620d5b71bd41e0f5a04c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 12:22:57 2022 -0700
+
+    FIX:
+    - included Django in pytest.ini
+
+commit 10510f733a600c8d099146a0b9a0f7d212af4a38
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 12:09:42 2022 -0700
+
+    UPDATE:
+    > .gitignore
+    - Ignore all python environments
+
+commit 43db869eb3292669ceae30f112c8a18d624634ca
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 12:00:21 2022 -0700
+
+    INSTALLING:
+    > Pylenium
+    - Purpose: for webdev testing
+
+commit ee243f307fcc3e475b024bb8cc8789821ba75631
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 10:44:38 2022 -0700
+
+    ADDED:
+    > test 302
+    - Wrote 302 test where it pre-existing entry redirects to the entry's page
+
+commit 3da0697264beb857a8e933d271888e44bba19c91
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 30 10:36:44 2022 -0700
+
+    REFACTORED:
+    - removed old verison of create
+
+commit 58cad3735f812b485b196432ea2f7196b4412171
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 18:05:21 2022 -0700
+
+    STOPPING SESH
+
+commit 1685c357fa20b0b6856a7b75228fe3b64e889f06
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 17:35:59 2022 -0700
+
+    ADDED & TESTING:
+    - Wrote tests regarding Templates used
+
+commit 19259da0f81add9e5d53e2acb4ff205aa444584c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 16:39:02 2022 -0700
+
+    REFACTORED
+
+commit f6e638118e5c2469c1ffe283ae4ee0efb05c4a39
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 16:34:15 2022 -0700
+
+    Refactored code
+
+commit 02f6739b6a035ff8315bdaa3c1edae71665c4fe2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 16:24:51 2022 -0700
+
+    ChANGE:
+    > views.create() and create.html
+    - Replaced HTML form with Django form
+
+commit cc07eed90ac423c8522998fa65faf304e0cfaeb3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 16:09:25 2022 -0700
+
+    ADDED:
+    > views.create_form
+    - Purpose is to replace HTML form with Django form in create.html
+
+commit b5e84baa8ec2f1dbcea1256d64b19f8bb29df764
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 15:05:52 2022 -0700
+
+    FIXES:
+    > views.edit_form
+    - Added error message in case initializing was forgotten.
+    
+    > views.entry()
+    - Added message to be none if message was not in accepted list.
+    - UNSURE: change to template variables 'body_info' and 'message'
+    
+    > views.edit()
+    - Edited pages are now saved.
+
+commit 99bf10feee82d3c78e6e9e417851c9fb643dc809
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 14:05:33 2022 -0700
+
+    FIX:
+    - Now redirects from edit page to entry page
+
+commit b6d5c9cc0d8da71aabe3c4c5c9df19b10a163fc0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 13:54:13 2022 -0700
+
+    CHANGE:
+    - Changed from HTML form to Django form
+
+commit b3f71bb7d5cae20857a58df23faed4457e1743f2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 13:48:02 2022 -0700
+
+    TEMP DISABLE:
+    > views.edit_submission()
+    - temp disable and trying to keep everything within views.edit()
+
+commit 3b5d8c76f9aaa52536c9675caf6664ccf81993fa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 29 13:38:23 2022 -0700
+
+    ADDED:
+    - Django form. Saving before new branch to test out
+
+commit 5ca0b57b8fe61a12daf39dc586c5599d252614cd
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 20:28:45 2022 -0700
+
+    STOPPING SESH:
+    
+    BUGS:
+    > views.edit_submissoin()
+    - Redirection does not work.
+
+commit d2a4cfc023dd19068690721417a99c2338825d77
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 18:55:47 2022 -0700
+
+    ADDED:
+    > views.edit_submission()
+
+commit 972373e031a2940fd2a7f9e185fa941ccf9908dd
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 18:29:49 2022 -0700
+
+    CHANGE:
+    > edit realted
+
+commit 9acfae6231c135249207889f4ed44122d9299e98
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 18:04:36 2022 -0700
+
+    CHANGE:
+    > entry.html
+    - using 'title_info' for edit button
+
+commit 4cac93d9dac0b91b482334c5dbba0c58bcc11987
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:50:13 2022 -0700
+
+    EMPTY PUSH:
+    - finished with 'create' branch
+
+commit 214ee29510c6915fa7ecda547386985435bb6072
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:49:49 2022 -0700
+
+    NOTES:
+    > specs.md
+    - Updated checklist
+
+commit c45b34fb22d40a3e8872d4a6855e8402d3eacad1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:45:46 2022 -0700
+
+    FIX:
+    - Automated adding title to the body text when creating new entry
+
+commit 5ae3196d6598002dbedc6aaba76774ae87c87904
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:38:09 2022 -0700
+
+    CHANGE:
+    - Redirected sucessfully created entry
+
+commit ba927b393494244ad16b17f218218c48bb3c2186
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:33:25 2022 -0700
+
+    TESTING:
+    - Revision 2, where a sucessful save redirects to the new entry
+
+commit 6ac3d88bcf364cacae6eb48cd53352246eec97e1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 17:16:15 2022 -0700
+
+    FIX:
+    > views.submission()
+    - User title and body is now properly saved.
+
+commit 567c18ffd70b76f92cccbb4e22594c35f732123b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:24:51 2022 -0700
+
+    NOTE:
+    - Adjusted the refresh note
+
+commit e0b9dfe1efa7a3fbda76211977925b7703aa6aa4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:23:02 2022 -0700
+
+    NOTE:
+    - Noted why HttpResponseRedirect was used
+    - Also mentioned the limitations of the redirection if the page was refreshed BUT the user's previous title and body isn't being carried over
+
+commit eaecf7ae936de353598086df0f092d5f3f2f6014
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:18:35 2022 -0700
+
+    FIXES:
+    - If 'create/submission' was used directly OR was refreshed, HttpResponseRedirect to 'ency:create'
+    - Adjusted messaging to include user's title
+
+commit f5f5af5ead70dcd84db3279574a2c41ca98e9a90
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:14:01 2022 -0700
+
+    PROPER FIX:
+    - If failure to save due title existing in database, user's typed body is carried over.
+
+commit 5cdf33c260053ace1cfaa75733c781b20114b2be
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:12:00 2022 -0700
+
+    FIX:
+    - Carried over user's previous type body whenever entry's title already exists in database
+
+commit 31d28421a72674e10bb3a8e7bd24ff6f895c647e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:05:00 2022 -0700
+
+    TODO:
+    - Figure out how to save user's title and body so they don't need to retype the whole information.
+
+commit 2b8ba85bb3ff077ad9e81f352a267a85d945b50d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:04:12 2022 -0700
+
+    TODO:
+    - Save user body to Markdown
+
+commit 847d0cdeeb487c5b6237400f57d1566ae18acd13
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 15:03:40 2022 -0700
+
+    ADDED:
+    >views.submission()
+    - Properly direct user submission to either Error or Sucess.
+    
+    CHANGE:
+    > create.html
+    - Change message to use if statement for flexibility...
+    reason is that the first time on the create page should not display any message.
+
+commit a46be19123494757b9bec8ffd9dcb093845d719d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 14:22:17 2022 -0700
+
+    CHANGE:
+    - Assigned typing
+
+commit 43857088192978608b4b917bb30b6eb388a657e4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:56:51 2022 -0700
+
+    FIX AND CHANGE:
+    - Changed how instance variable obtains filtered list.
+    - Fix the issue: whenever the entry DOES NOT exists in the database, it would not assign the instance var filtered_list.
+
+commit b534d91380cb6d1447c28999e21ae9fb84c09c71
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:51:02 2022 -0700
+
+    FIX:
+    - List works now.
+    - Changed list assignment from the variable to instance variable
+
+commit dc0092b969d4d0ebed5ac7d87107d48a8ab0817d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:49:26 2022 -0700
+
+    TESTING:
+    - List is not outputting anythign
+
+commit aaa175f73e681b173c281cbf3adc72a411d54e4a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:45:38 2022 -0700
+
+    BUG:
+    > class 'filter_class'
+    - Currently not putting list
+
+commit 0a4d3c0a6f30c8ec8f9152156ff0de415f92cedc
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:31:11 2022 -0700
+
+    REFACTORED:
+    - Removed previous verison code
+
+commit 78cae37f0c5f494f7ca928f37ccf055fbe879771
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:30:57 2022 -0700
+
+    CHANGE:
+    - Changed filtered function into it's own class
+
+commit 55872ee10a1a42c4d208a081a07ac65d19f0bec5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:21:49 2022 -0700
+
+    REFACTOR:
+    > func 'util.check_if_exists_in_list(title)'
+    - Works as intended when it got replaced in views.search()
+
+commit 442b37a819c5d41b94bad708f7c89a68021c3f30
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 13:01:13 2022 -0700
+
+    ADDED:
+    > func util.check_if_exists_in_list()
+    - moving logic of list into its own function to be used multiple times
+
+commit 87ba0ffe79b1bb353e400e4e53fc5de211f4cdc7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:56:00 2022 -0700
+
+    PSUEDOCODE:
+    > views.py | func 'create'
+    - Wrote steps to saving a new entry from user..
+
+commit 550cf2e2dc2d5d74b83d8bf5f16ae61d7e813c0f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:45:50 2022 -0700
+
+    ADD:
+    >create.html
+    - Added input box for Title
+
+commit 1c6e859038471711254468c717e697644d49fcc1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:38:48 2022 -0700
+
+    CHANGE:
+    > create.html
+    - Adjusted spacing between divs
+
+commit cfebb353c2584c4619d41e19e59ac75720a1f0e4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:31:23 2022 -0700
+
+    NOTE:
+    - Added a note to keep RFER 15 in mind when linking external site.
+
+commit 6214761969cc35d5b29fb8197037360c7176d6f2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:09:15 2022 -0700
+
+    NOTE:
+    > RFER 15
+    - Added article about the 'window.opener', which can maliciously attacks the users
+
+commit 68f6cdaaaabb95f8eba8449c9015634d9759d512
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 12:06:50 2022 -0700
+
+    ADD:
+    > create.html
+    - Added info about typing in the Markdown format/syntax.
+    - Added target and rel to the syntax info.
+    
+    NOTE:
+    > RFER 15
+    - Included info about linking and security risks
+
+commit afc2cd65f431559eff382fe5a2da357a9f1344ef
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 28 11:53:26 2022 -0700
+
+    CHANGE:
+    > form
+    - Added request method 'post'
+
+commit 3dae6013491fcec7fd93b8549fc92496ea303c30
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sat Aug 27 17:29:32 2022 -0700
+
+    ADDED:
+    >form 'user_text_area'
+    - Added "required", which requires text to be present before submission
+
+commit 9ca5921da9c9a8248ea45457206f247f8d9f38ce
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sat Aug 27 16:55:45 2022 -0700
+
+    CHANGE:
+    > create.html
+    - Added csrf_token
+
+commit dc67914f0b2d0a8b46df74bc1cba85695c383ee2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 17:43:26 2022 -0700
+
+    ADDED:
+    > create.html
+    - Added form with textarea and submit button
+
+commit 990ceac538ff5e5218206e3deb3c53a4f755268d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 17:20:35 2022 -0700
+
+    PSEUDOCODE:
+    > create.html
+    - wrote psuedocode
+
+commit fae9643080f5a61f536acdbe4a4bea5f54486a44
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 17:05:03 2022 -0700
+
+    push branch
+
+commit 06f3f04a1364358aabbe96aeb0ec2a88ddbe77d0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 14:16:51 2022 -0700
+
+    Initializing branch for "create" page
+
+commit 9db7e478c5329fe635fdce966bb6d59203c24371
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 14:12:13 2022 -0700
+
+    RETESTED:
+    > var 'filter_search' | Verison 1
+    - FIXED problem: accidentally used '()' instead of '[]'...
+    
+    () is meant for tuple datatype, which is why nothing was being rendered on the HTML
+
+commit 7def825d2d640ba1f7a6f0d8f386751f4d14efe9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 14:09:38 2022 -0700
+
+    REFACTOR:
+    > var 'filter_search'
+    - Removing since unsure how it works.
+
+commit e56b28f25b191e888dee17d1f9b1ce35156f9680
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 14:05:43 2022 -0700
+
+    NOTE:
+    > RFER 13
+    - This also applies to request.GET
+
+commit 55282d9ea2d6d5a7d9637f0e8e2fcb925903d548
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 14:01:02 2022 -0700
+
+    NOTE:
+    > RFER 13
+    - Info on request.POST.get()
+
+commit d68735846a0857064dc3884568a79584f65cbb2d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:54:36 2022 -0700
+
+    CHANGE:
+    - Change parameter name for string
+
+commit e167bfe789eb85cbdf1217d9ba19b04bff8977b3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:52:48 2022 -0700
+
+    NOTE:
+    > specs.md
+    - Checked off items for Search specs
+
+commit 6c5d5c732d1c2bebfb9d7dd061fff3509d173cd6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:48:39 2022 -0700
+
+    FIX:
+    - Verison 2 for filtering works. Need to see why verison_1 doesn't work
+
+commit e9ea35c9d23f5e8228da2b15af070b8bc6f322e6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:45:54 2022 -0700
+
+    ADDED:
+    - Verison_2 for filtering list
+
+commit 6b634e0bbe41c7d12181f8816e3f2d3713fa378f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:38:14 2022 -0700
+
+    BUG:
+    > search
+    - List is not being outputted
+
+commit 61c5faf3bc0ae715a77d8ea6f4c2e518a495f7da
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:27:17 2022 -0700
+
+    FIX:
+    - added render to Priortity #2; it was missing
+
+commit 648f1931f69ca22dcd7b700832b41903438e39aa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:23:29 2022 -0700
+
+    FIX:
+    > func 'search'
+    - Case-sensitivity is no longer a problem
+
+commit 53bc59c1442333eda158d7a36be238d04f1c54de
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:07:02 2022 -0700
+
+    NOTE:
+    > RFER 11
+    - Info about expresson generators
+    
+    > RFER 12
+    - Info about the parameters for django function 'reverse()'
+
+commit 95ad73c7d279abc5a210d9e3e32bf0f165693400
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 13:04:15 2022 -0700
+
+    WORKS:
+    > func 'search'
+    - If there is a equalivant search in the list, it will redirect to the wiki entry page.
+    
+    BUG:
+    - It is case sensitive, so need to compensate for that.
+
+commit 8c3c1af62feb5a17ba71fc94523d7476fef3ad00
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 12:57:21 2022 -0700
+
+    ADD:
+    > func search
+    - Added var 'filter_search' to use GET as criteria for filtering.
+
+commit 729ac86d3346d94547752e9cb8ab35f6832f825b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 26 12:42:22 2022 -0700
+
+    BROKE:
+    The page now redirects to search page, but now erroring out.
+
+commit 5bc1f9921c0dec4ed186a6db5fafce2696852fdf
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 20:37:29 2022 -0700
+
+    Ending session:
+    > trying to get python side to work...
+    - currently, it does not directly redirect into entry if entry is in database
+
+commit 3847814c87aa5b0121174d24e3afb2ee11500133
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 20:11:17 2022 -0700
+
+    FIX:
+    > layout.html
+    - search bar doesn't error out anymore, but it doesn't do anything
+
+commit 2631edeca297377c725f65a0f098c1003e0b91b5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 20:04:46 2022 -0700
+
+    FIX:
+    - readded original form
+
+commit e9706c427770c48574dfcb5e65d22c0a2540b8a2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 19:48:15 2022 -0700
+
+    TESTING:
+    > layout.html
+    - search bar form
+
+commit 980c146851cee3298c40361f6faaf29dbf3fc104
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 18:47:36 2022 -0700
+
+    REFACTORED:
+    - Refactored
+
+commit f4280cab60e2c2bc335791caee7d6f6231dc3069
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 18:42:57 2022 -0700
+
+    REFACTORED:
+    > views.py
+    - removed old Django variable 'random_entry'
+
+commit f585d4df852a9134707b25485bb1d2558ae12ab4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 18:23:26 2022 -0700
+
+    PSUEDOCODE:
+    > layout.html
+    - Wrote idea for how searchbar should function
+
+commit 0498436f9951b87020da85107ce00c1afa5011cf
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 18:21:22 2022 -0700
+
+    PSUEDOCODE:
+    > search.html
+    - Mocked up general structure for search result layout.
+
+commit 186896c0b7fe2de0a30cb723a1e9e7c4318731c4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 12:06:18 2022 -0700
+
+    CHANGE:
+    > context processor 'random_entry'
+    - added type hint
+
+commit f8043f9d347aa92726e859859ffaf5ac4c7013fe
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 12:01:30 2022 -0700
+
+    WORKS:
+    > context processor 'random_entry' (aka func 'get_random_entry) WORK ACROSS ALL PAGES.
+    
+    POP OFF WOOT :'3
+
+commit 3079ff1a781c8e9f4c34285dbd2f72db0f798123
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:48:59 2022 -0700
+
+    ADDED:
+    > revison 2 | func 'get_random_entry(request)'
+    - need to add to settings's tempalte
+
+commit 3804e0584c46e2d264aa83a9236e2236f7e8929d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:46:40 2022 -0700
+
+    TEST FAILED:
+    - Nothing happens with var 'random_entry'
+
+commit f5eaaab3bef6a5b41ba2626d924db1b7e7ea243d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:41:23 2022 -0700
+
+    NOTE:
+    > RFER.md
+    - RFER 9 about RequestContext and Context Process
+    
+    ADDED:
+    > variable 'random_entry' as a context processor
+
+commit ba02ae56e3d459ea31858af79741828dea570cd2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:34:49 2022 -0700
+
+    *** TESTING PHASE ***
+    ADDED:
+    > personal_context_processors.py
+    - Attempting to test context_processors
+
+commit bf1b253bd6b1286225459ff21720c853afb6f622
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:27:59 2022 -0700
+
+    NOTE:
+    > RFER.md
+    - Added info Django's simple tags
+
+commit ec429403e66a03a4348e0099044b17ab5788a6e9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:06:02 2022 -0700
+
+    REMOVED:
+    > func 'random_entry(request)'
+
+commit 478b9d2c1c77da7b7a4115504d787d370e27f701
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 25 11:05:45 2022 -0700
+
+    TEST: views.py
+    > func: random_page(request)
+    - Commented out to test if this was depended. Will remove ASAP as it's not needed.
+
+commit f7956e924dac939c553c89e5a0acdd6d55676080
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 23 12:49:02 2022 -0700
+
+    ENDING SESH
+
+commit d7fa4f1f4d4b1cf5ca5c34d458741c5e78f6afd2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 23 10:58:07 2022 -0700
+
+    CHANGE/FIX:
+    > class 'util' | func 'random_entry()'
+    - adjusted var url_check to include the full url
+    - change if check to ensure that the both urls have be the exact check.
+    
+    NOTE:
+    > Logs.md
+    - How util.random_entry() could be used for personal project 'miru'
+
+commit 9e029e1b5cffb080259cd761b79905693eed6c32
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 23 10:47:54 2022 -0700
+
+    FIX:
+    > func 'random_entry()' | Added a check where if the randomly grabbed entry is the same as the current page, reroll.
+
+commit 15fc3959ec07427a05eb714a13ee1a9bac1d263b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 20:00:38 2022 -0700
+
+    Stopping sesh
+
+commit f11b66ec884a1de0a794ca1ea70ba9b9e5dc703c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:59:35 2022 -0700
+
+    ADDED RFER:
+    
+    > RFER 7 | Info about grabbing current webpage URL
+
+commit 6fd7c28aee0855c920a1a2a1ad129d3eb30b0d45
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:56:14 2022 -0700
+
+    NOTE:
+    > logs.md | Included note about future plan to NOT have random_entry send the same URL as the current URL
+
+commit 603eeca99e2cee67d41e094ddb5e6c4064a614f3
+Merge: b74ff75 9f8d830
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:51:00 2022 -0700
+
+    Merge commit '9f8d83013b013bc5a3f76b17bcb2066d46132cda'
+
+commit b74ff754e45f4d47f1e79db098e5a24e7fe2a083
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:49:16 2022 -0700
+
+    MERGE: Syncing with placeholder fix for 'random_entry' being everywhere until it can be properly globalized OR properly put into context Processor
+
+commit 9f8d83013b013bc5a3f76b17bcb2066d46132cda
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:11:00 2022 -0700
+
+    NOTE:
+    > logs.md | Added comment about temp fix for template var 'random_entry'.
+
+commit fdffc8a208622cf66b11b6ee6896c9ed55e1a065
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 19:08:31 2022 -0700
+
+    TEMP-FIX:
+    > Temporarily copy and pasted template variable 'random_entry' for now.
+
+commit 572faf854ccd9436e4bcf2980559567fd9be4c17
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 18:49:21 2022 -0700
+
+    WORKS:
+    > a href using template var 'random_url' and now randomly outputs an entry!
+    
+    > BUG: It won't output a random entry again when NOT on the index page.
+
+commit 41f43a4db2488ea7de3344953d84bc0eecfb1f66
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 18:44:37 2022 -0700
+
+    ADD:
+    > layout.html | Added new template var 'random_url'
+
+commit 81d3d0627c52b92cadc7b2ce1468376f0c24a5b5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 14:48:52 2022 -0700
+
+    BUG:
+    > Random page works, but current workaround is bad.
+    > Currently, the URL doesn't properly display the entry's name. It display's workaround's name "None"
+
+commit a57aaf408d93f45013bf30a4a831d423fe18be6a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 14:08:57 2022 -0700
+
+    BUG:
+    > Random_page entry is not redirecting.
+    > Added control for testing purposes
+
+commit f5414c421d385bda1d39ab45b65442e5afdc655c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:50:43 2022 -0700
+
+    CHANGE:
+    > func random_page() | wrote logic that may or may not work
+
+commit db7aa43c51e741387b33d82d972c7bf3006dbf06
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:46:56 2022 -0700
+
+    ADDDED:
+    > func name 'random' to output random page
+
+commit 71176bb7de19e21d62a601f59bbc4792c12f90b4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:45:29 2022 -0700
+
+    FIX:
+    > create.html now works... Need to add functionality.
+
+commit 60da0d8dbe338c2c294a76c7d776ae3f5c99bafa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:42:26 2022 -0700
+
+    CHANGE:
+    
+    > Add link to create new page... However, page doesn't exist. Need to render in func
+
+commit a8e0d6ef3d55b4297928a903825ea5121fedf9cf
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:34:35 2022 -0700
+
+    ADDED: htmls for search, create, and edit
+
+commit 5083e1c7927b030660f7a33b6b07c575d16aad5c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 13:01:56 2022 -0700
+
+    CHANGE:
+    > layout.html | added block name to their respective "end" block
+    
+    NOTE:
+    > specs.md | Check'd off MarkDown2
+
+commit b1a136bb47db00636ead41ab28a6d46117a1c249
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:54:43 2022 -0700
+
+    NOTE:
+    > specs.md | Checking off completed tasks 'index page'
+
+commit 9812ca87a7c2162099c1900b047d1529c5f0bbaa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:53:08 2022 -0700
+
+    CHANGE:
+    > 404.html | Adjusted title and message
+
+commit 983fe0d0872034f781d558d453fd6d6fe1a59dbb
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:49:20 2022 -0700
+
+    NOTE: specs.md | temporarily done with entry page for now.
+
+commit 09917e659db1181f2c805a8d77d2ea1d4b7b2964
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:35:44 2022 -0700
+
+    SAVING: 404.html works as intended
+
+commit 2d8595ffe647249cbf64b8c155a69e254f8d5631
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:35:05 2022 -0700
+
+    ADDED: 404.html | needs testing
+
+commit caab28b1a22c3d77a23165583ceccdcf735116f7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:24:48 2022 -0700
+
+    NOTE: added note how util.list_entries() stores the str in list
+
+commit 4e09d5390385c697967fcef25a7b53dc229bf8df
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:22:49 2022 -0700
+
+    CHANGE: adjusted Django var names to be easier to read
+
+commit 56c39f3d2f68a02ffc4fbe544b64ae9ad26b58b6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:22:03 2022 -0700
+
+    ADDED: Title of entry page
+
+commit 70b03eed0e4077544936510e9aeb8fa7652d4cd9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:18:16 2022 -0700
+
+    ADD/FIX: added 'safe' to var 'page' in entry.html
+
+commit 9cae7d10a51839a6ddcb8d09177f2bb53e05cd81
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:12:43 2022 -0700
+
+    FIX: webpage now loads.
+    
+    BUG: Currently, the page displays the RAW html instead of putting them into respective areas
+
+commit feed4a3c0021f323da18e845be7b2d1693fdf444
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:10:10 2022 -0700
+
+    BUG: went from 'missing text' to 'TemplateDoesn'tExist'
+
+commit 67c07731da2fa5e7f84aa185f22c9959e1c15a11
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 12:05:27 2022 -0700
+
+    ADDED:
+    
+    > entry.html
+    > using util's func 'get_entry'
+
+commit b25958e76d35f42d16dea0d653ad9914136b30df
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 22 11:58:05 2022 -0700
+
+    FIX: Index.html/homepage no longer erroring
+
+commit 3e36c4bbd671a0d08e68d51c440e086dc44351fa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 22:07:27 2022 -0700
+
+    UPDATED: logs.md
+
+commit 6d4a7147b000280bff6dfa9e7e087a5a13d88149
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 22:06:24 2022 -0700
+
+    ENDING SESH: start wiki project...
+    
+    > Focused on setting up Pytest with Django
+
+commit 9e642779d161d03e653c0a98505229773ab9a4aa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 21:52:57 2022 -0700
+
+    CHANGE: changed name
+
+commit bf80928382b50116bb81ddef618ffeecd558c23a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 21:52:18 2022 -0700
+
+    CHANGE: Moved var to instance and changed assert for new page
+
+commit cb8c6398c07bb82e9533d57c09e0751815386bfb
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 21:32:13 2022 -0700
+
+    UPDATE: pyFixture 'driver' works as intended...
+    
+    > Do not add the "expected" output to the fixture
+
+commit 35ce8489bb2bc4ac78ab0a1cdd595a59ee2e7305
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 21:18:22 2022 -0700
+
+    FIX: Selenmium closes after test | Need to test failed results
+
+commit 61e4a3f0d52dae27819fc62db1df8ff63a1e4af4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 20:59:15 2022 -0700
+
+    BUG: setup 'driver' not closing
+
+commit 8a60f3c92496260c0e09772649fcd2daab125561
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 20:24:10 2022 -0700
+
+    UPDATED: RFER.md | #2 was added
+
+commit 66c6dd23cbfcbadfcef93b468d41d6590371d7f9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 20:21:01 2022 -0700
+
+    CHANGE: Setup for Selenmium moved to func so it doesn't constantly open new broswer instance after editing code
+
+commit 9934bbba9cdd2a4f537295316e1755838ce3fc8f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 19:49:45 2022 -0700
+
+    ADDED: pytest for Django, but not passing 'title' test
+
+commit 2a0cb75e85f250de07bc6c7a4ebf5aac59fcc0d2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 19:12:20 2022 -0700
+
+    CHANGE: pytest.ini |  'yourproject' to 'wiki'
+
+commit bab3b6a807a5e7583f22a8e840a1130b60826d3d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 19:11:37 2022 -0700
+
+    ADDED: pytest.ini
+
+commit 09f5ae1c69719544b38948b9c5323b4da0be08f1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 19:10:35 2022 -0700
+
+    ADDED: func 'entry' | needs testing
+
+commit 0c81e5735a2c555663e08a67de1246a10e1dcff8
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 19:01:47 2022 -0700
+
+    FIX: added app_name to preexisting var that came CS50's code
+
+commit 441cc6da2a7765513c5390c2c6609af7c1ad38c5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 18:35:05 2022 -0700
+
+    ADDED: RFER.md
+
+commit 646725831ed7dec1c11ac82e247d0034f9cb001d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 18:20:55 2022 -0700
+
+    CHANGE: specs.md | Added format
+
+commit 09bd1cd00de9be781e42949b2dbf2f3d8cbbc2e0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 18:16:23 2022 -0700
+
+    ADDED: specs.md | Contains specs for Wiki project
+
+commit c6858591410ec4a6a7d4293fa059736bb9ec1da0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Sun Aug 21 18:13:47 2022 -0700
+
+    ADDED:  pip requirements.txt
+
+commit e095c021ab85f3fc4dc512ffcbeab2c84b744487
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 21:08:51 2022 -0700
+
+    ADDED: files for Project 1 'wiki' and Project 2 'commerce'
+
+commit abd9597b8c0510951911a44c1efceb4a6e2f8467
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 20:51:12 2022 -0700
+
+    FINISHED: Lecture 4's examples
+
+commit f8851f6e9a0918eddbe58aa1d28f516e3d01ab9f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 20:33:18 2022 -0700
+
+    ChANGE: added users
+
+commit b42e20c3b0a290afb4088cd177806b8a5a455593
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 19:59:50 2022 -0700
+
+    ADDED: app 'users'
+
+commit f6cfaa1b5712d827aa8f2dab446974c9dd7dfee3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 19:45:06 2022 -0700
+
+    ADDED: list_display to PassengerAdmin
+
+commit 7ed59c8bfbd6d56395072743e88f909aff34485b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 19:10:39 2022 -0700
+
+    ADDED: var 'filter_horiziontal' to passenger
+
+commit c314c5dbbc01bd0a63a3564d6ebc062a11ca9b28
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 19:01:00 2022 -0700
+
+    ADDED: Admin classes for Airport and Passenger
+
+commit 56cfea0e4b05ddd29a87789aba67099a605628b8
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 18:52:11 2022 -0700
+
+    ADDED: FlightAdmin
+
+commit 515b989d636eadba376407de78941871cf9d6e9b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 18:48:50 2022 -0700
+
+    UPDATED SESH
+
+commit 54be43e0b7dfcede5d05e7196068f3241c4538e4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 12:35:17 2022 -0700
+
+    FIXED: variables names for nonpassengers AND flight_id
+
+commit 8eac75395c3a9ee127555127753df9286fc533fb
+Merge: 707433e 2a58184
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 12:17:38 2022 -0700
+
+    Merge branch 'master' of https://github.com/WaToArt/CS50w_Web_Development
+
+commit 707433e6a758c3b6467811fd81721de397cce3f1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 12:17:37 2022 -0700
+
+    REVERTED: back to commit that started at beginning of session
+
+commit 2a58184259e65edd331260808adea678cb78b737
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 11:15:25 2022 -0700
+
+    CHANGE: docker compose to use xdist
+
+commit 941620c9ff7cdbad1792d77187ae6521100b8695
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 11:12:22 2022 -0700
+
+    test number 3
+
+commit 8470a6cb76cc9d9d523b3aa22c09edf20d8547c3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 11:11:03 2022 -0700
+
+    test push 2
+
+commit 11e2df8a9e5b436f8fab95d5ed3d09608323109a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 11:08:28 2022 -0700
+
+    PyCharm test
+
+commit 5e262111dae892a29a0d64aa083d56920a955126
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 11:07:27 2022 -0700
+
+    ADDED: var 'nonpassengers' to func flight()
+
+commit bd9b40c6cec5107168699c7221a64898dc8e5215
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 10:34:29 2022 -0700
+
+    STARTED: book func
+
+commit 239ade4094bdd87f7cc660669aa66d9aa7ec4e18
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 10:22:34 2022 -0700
+
+    ADDED: class Passenger
+
+commit dca86079a15c3aa5ab98adaf391bf45c50425f37
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 18 10:16:13 2022 -0700
+
+    UPDATED: session_log.md
+
+commit 35b5a20db2df7b20b7e6c2d1edc10839ad992f0f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 13:22:45 2022 -0700
+
+    ADDED: "return to index of all flights" button
+
+commit 70666bddcb6dbb47da024b9e18aa768dd8844604
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 13:20:18 2022 -0700
+
+    FIXED: index page properly loads...
+    
+    > Reason: Need to specify with app_name
+
+commit bce9a2d4e044c8f978f1403b92bf298b1b4ed90a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 13:11:00 2022 -0700
+
+    ADDED: flight.html
+
+commit a2303429a213ae2bef9b2c4f088a4ed8658d06b6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 13:01:05 2022 -0700
+
+    ADD: func flight()
+
+commit c95cd7e55e6fb7b03035d64cce552dae7f6a66eb
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 12:58:00 2022 -0700
+
+    UPDATE: RFER 2 & adding new func/page 'flight'
+
+commit 0fea80f7a1f6a3e28437184f640168fb177691f8
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 12:39:05 2022 -0700
+
+    ADDED: superuser and registered models
+
+commit 9aefb90ce6f57572e41c65ad3928191f45e9f35a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 12:22:25 2022 -0700
+
+    UPDATED: Database
+
+commit 99ebb1415c7fb23eab262469632b5f8db912210f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 11:55:02 2022 -0700
+
+    CHANGE: syntax for loading CSS
+
+commit 543a39b31e9db10fa9bb8908d501cc5614a59173
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 11:49:04 2022 -0700
+
+    ADD: block to layout.html
+
+commit 273599f42c413efa484cbbfe7971660d7f640fad
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 11:48:29 2022 -0700
+
+    ADDED: components for flights webapge
+
+commit 9355b096f2e210ed59c7dd7c08a3ff9123452c16
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 11:05:30 2022 -0700
+
+    UPDATED: RFER | added direct quote from lecture 4 note
+
+commit e288a3535f3e230385699c879b356ac1c7cff8c6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 17 10:47:16 2022 -0700
+
+    UPDATED RFER: foreignkey, models.CASCADE, & models.PROTECT
+
+commit 2f19a73d5a03b752a3ed20147a112cc732ed1156
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 17:25:20 2022 -0700
+
+    UPDATED: Session log... ENDING SESSION
+
+commit 5227a80c68d1bf0063e6c01c10eb14aa775e535f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 17:22:55 2022 -0700
+
+    CHANGE: hello.html functions  as a webpage
+
+commit 1c1c41fb10d58f99775a6b7342a066f5f1641d83
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:38:58 2022 -0700
+
+    CHANGE: migrated new info with Airport and changes in Flight
+
+commit f911f3cc6ca5b468116515055d8ada3076bcc3e3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:37:00 2022 -0700
+
+    ADDED: class 'Airport'
+    
+    CHANGE: 'origin' and
+    destination' to use models.ForeignKey
+
+commit c972172335a02697215670475eebf6beb8c13413
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:23:47 2022 -0700
+
+    ADDED: migrate db.sql & create Flight with origin New York
+
+commit e2c6c93cfe6985e226e715dd7371774dbf0f0bbf
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:17:51 2022 -0700
+
+    ADDED: model class 'Flight'
+
+commit d2138093d8723e78c689ab53e8589a38612ec9a1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:15:02 2022 -0700
+
+    TESTED: hello to see if app is working
+
+commit 8f328f1df25cb5f2a0787b3ee3123a56ef713b9f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 16:11:02 2022 -0700
+
+    ADDED: Django project 'airline' and app 'flights'
+
+commit 79980c79336d2140621e7626ad54c8c053e665f5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 16 09:27:43 2022 -0700
+
+    Downloaded: project 1 files
+
+commit 982b3e3eaad6308d2ca90ee6cc4ffceb62d233c0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 22:58:38 2022 -0700
+
+    Updated: session log
+
+commit d359f10a36ca78b8d6c9039eb2244001dc93319e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 14:05:32 2022 -0700
+
+    Stylized button 'clear'
+
+commit fab0b5cc11cef27c046b7268518846aaf4e5ea12
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:56:38 2022 -0700
+
+    Added clear button AND refreshes page to show results
+
+commit c299716e9485e75bd78cf40c7812216927aa0505
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:28:05 2022 -0700
+
+    ADD: commented DIY to 'if' statement when tasks were empty
+
+commit 7d7de9fa2c9a32ca49c8afefbf6c40968b8f3bad
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:25:02 2022 -0700
+
+    fixed how to app new task to session list
+
+commit 899f4d6cf0c323fe49dfc8e378bd3925eda1d8ff
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:23:14 2022 -0700
+
+    initialized migration & fixed syntax error 'request.session'
+
+commit d96e8bde5e505bd51232e07ad3faef0c9be2f302
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:13:45 2022 -0700
+
+    Refactored and removed old code
+
+commit 763af32e56b270f55918683ed28f9beeb1b9438b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:13:12 2022 -0700
+
+    changed empty message from <li> to <h3>
+
+commit 4ac3b3155018efb83338a1d9df9c1ed104d52b77
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:11:31 2022 -0700
+
+    Added if statement when list is empty
+
+commit 9b5dec4dfe10cc72ef202990d8cd91a2e2b4e97e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 13:00:23 2022 -0700
+
+    Implemented django's "reverse" and "HttpReponseRedirect"
+
+commit eae44fdc03bdb770505bc7bc2b87cf10108c1c12
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 12:53:51 2022 -0700
+
+    added in if statements for func 'add()'
+
+commit b9b61eedc2dcf9f21025c9581b7261d671126277
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 12:28:40 2022 -0700
+
+    added action to add.html form
+
+commit 1e4d2dfe6bac433fb1a70c02beee51d2caf408e7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 12:22:18 2022 -0700
+
+    Added links to tasks' other apps
+
+commit 8b37efd77794deb697a978899b29b75dc27c756c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:50:51 2022 -0700
+
+    fixed form for 'add.html'
+
+commit cdb883c386a80b2fb445412d7233c27d0f108bb3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:48:32 2022 -0700
+
+    Modified htmls to inherit template
+
+commit 88fad645ef0fde296e4ee0bfc050e493e83ecf7d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:39:42 2022 -0700
+
+    layout.html | created
+
+commit 2ec907f6b1afa44c409e1ddd3b20153cfb61c79a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:38:56 2022 -0700
+
+    'add.html': added code
+
+commit 0b40b6b59ddb4f07bc2d49fe395eef0bbe0af69e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:32:39 2022 -0700
+
+    created html 'add'
+
+commit a681bf312acd3769c0ad0e155b5cb93689bb1849
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 15 11:29:44 2022 -0700
+
+    pushing session log
+
+commit 965a9c5cde2653530add5f31ed64920320f27be6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 17:20:19 2022 -0700
+
+    Stopping session @ "Forms"
+
+commit ed5c4243f67c865c8d50c0734067d89c3fa6c8b5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 16:55:05 2022 -0700
+
+    tested django syntax with ordered list
+
+commit acaae511fe7209565fdece3ace046cd511bdb093
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 16:51:57 2022 -0700
+
+    Create note "VScode_extensions" to note about using VSCode Django extension that is intellisense like
+
+commit c369b9bd8f38d4b3ab80954604d556328c1f9944
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 16:43:58 2022 -0700
+
+    Fixed syntax error, and page works
+
+commit 9baefe3b9b9dba8aaef9fbdf2132807110f11d41
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 16:32:53 2022 -0700
+
+    Created files for style.scss and html
+
+commit f2e3a989701e0f8aa0923eb7a01dd79bcffdf970
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Fri Aug 12 16:21:02 2022 -0700
+
+    > finished "newyear" and starting "tasks"
+
+commit d7713b631bc72e1d1fce670e48333aaec237ed00
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 19:03:28 2022 -0700
+
+    > STOPPING SESSION;
+    
+    > Included timestamp of video
+
+commit 2192af3ab888280165805ac633467e8eb32f94e2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 19:02:08 2022 -0700
+
+    added variable to hold output results
+
+commit 7edf7329c91a492d3e1034f349394f91ac7c25d5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:59:30 2022 -0700
+
+    modified yes for 'newyear'
+
+commit 9cb9963c396fd8e860ca383658f80ef611f4f698
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:57:45 2022 -0700
+
+    html and logic WORKS for "newyear"
+
+commit a7215ed11e64a489e25a74dfb1d59c89eed625d3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:52:23 2022 -0700
+
+    Added "newyear" to settings
+
+commit 66c51f6b9c38e0ef03fe75411f667bbf482dd1c7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:44:12 2022 -0700
+
+    relocated index
+
+commit 3e8e42ebd63a2cda4ce189753eb4ffad0f9ef4d3
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:40:29 2022 -0700
+
+    created html and func for "newyear"
+
+commit e4e2bc7063f43e192834624cc526ceace4d0dcb1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:33:20 2022 -0700
+
+    created app 'newyear'
+
+commit a528ff6b022c73cbc7b54a3bde43cf54d98c0024
+Merge: 33ae25d 6f3a7bc
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:23:21 2022 -0700
+
+    Merge branch 'features'
+
+commit 6f3a7bcce10b74af0faaf727535bee683327ef2c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 18:02:23 2022 -0700
+
+    Relocated html "greet" and now works
+
+commit d330e4bb326a9039ab927ef4c3e1df5c7c06db85
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:58:08 2022 -0700
+
+    created html "greet"
+
+commit 3c583b0700a1c5b8228bd8343911e1173ff89fb8
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:53:21 2022 -0700
+
+    Created html for Hello
+
+commit 87da30da6f0d326df50723f4ae7493b40f2a8389
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:49:18 2022 -0700
+
+    Added func "greet" with parameter
+
+commit 1ff1dbef01f760107772ae4b099a61a3df626ace
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:45:17 2022 -0700
+
+    Added HttpResponse "Hello, Brian"
+
+commit bdc7627e7274dfeb3af14644aef4dd1dea49357d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:39:48 2022 -0700
+
+    Added URLs to Hello
+
+commit 6dfcd49214d32c1bec2f99ff6cd5a584641b475b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:35:55 2022 -0700
+
+    added Hello
+
+commit 33ae25d0c4836f7415770493201153c601d8422a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:29:44 2022 -0700
+
+    Pausing session to start on Django lecture
+
+commit 5a9006ce27575aede6c1ecdfb3ebab89cd2be53d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 17:11:16 2022 -0700
+
+    Vertically displayed "Advance Search" below Google logo
+
+commit 9ae0359b3ab97cea1bd0ca3106aab7aa5290c6ce
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 16:59:31 2022 -0700
+
+    Moved Google logo to top-left for Advance Search page
+
+commit 72805d9c0b939b288ef0c77fd9856ddf1e84c479
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 16:46:30 2022 -0700
+
+    Copy and pasted "I'm Feeling Lucky" to Images poage
+
+commit 097fa57b02c0af5db53f85694d4647904c2415f0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 16:45:40 2022 -0700
+
+    > Commented how "I'm Feeling Lucky" triggered a Redirect Notice...
+    
+    and guessed
+
+commit 3cadc69db9d9ff519b76957ae06c49ea4d3d6476
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 16:35:57 2022 -0700
+
+    Halfstepped to implementing button "I'm Feeling Lucky"
+
+commit 47fbcce1b515447f73d6a51c11d9da5d2e4dc371
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 12:28:57 2022 -0700
+
+    > Added RFER 7
+    
+    > Info and link about using hidden input and value
+
+commit a9315be6edeb3f26cd8b475630910ba6152a5531
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 11:29:47 2022 -0700
+
+    Added addition comments
+
+commit 899a55dd4582459a3b6d5cde7c9049aa5faa6e8a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 11:27:16 2022 -0700
+
+    > Hidden input  to  search only for images works!
+    
+    > Added comment to how it works
+
+commit 979516fa3c9e137582aabcfd06139497fe56ca68
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 11:24:52 2022 -0700
+
+    Added value to hidden input
+
+commit 40f3501584426871dc7059c2488da85d52fa2176
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 11:21:17 2022 -0700
+
+    Modifying function of "images"
+
+commit 86ae859760f95521c8821eb768756154414f6d49
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 11:16:39 2022 -0700
+
+    Wrote notes on how search works BASED on observing the URLs
+
+commit e38e3b9bc98466992351dd33207968d955f4988a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 09:32:49 2022 -0700
+
+    Logic for Advance search works as intended
+
+commit b1b8e5f5d5ac652e8c166d8b8feca60f8eac392d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 09:31:17 2022 -0700
+
+    Modified the "fields"
+
+commit 140e29518f871aa130b53a12aabbfb94f3e9ad4a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 09:28:55 2022 -0700
+
+    Not able to split the label and input text yet
+
+commit edede79d571647bcf9fd69e927fc68acbd972abe
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 08:56:09 2022 -0700
+
+    Positioned "Find Pages with"
+
+commit 2c44fd716aa0f74fe7a9e0c0156e411c05258a12
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Thu Aug 11 01:29:11 2022 -0700
+
+    > Started Lecture 3: Django.
+    
+    > Created Django project
+
+commit fa1e474650d27ce2cafecf5b47adb8c0064487c2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 16:01:48 2022 -0700
+
+    STOPPING SESH
+
+commit 905eabf00bc6df82930f3ce5a0ebce8201c6b246
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 15:38:57 2022 -0700
+
+    Added text "images", but needs to be stylized...
+    
+    ... to be smaller, centered right below "Google", and different font colour.
+
+commit a50f79cc898a954855d2f5544c51c85811d4a2e2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 15:37:12 2022 -0700
+
+    Implemented Google Image search
+
+commit 6f5fadfcbf49cac6b758c30d6456352afbb474ea
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 15:35:10 2022 -0700
+
+    Modified to use correct link for searching with Google Images
+
+commit dd51ed84ff9301e537e5c1bcc95fdf34dba6bd44
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 15:27:54 2022 -0700
+
+    Added link to Google's Developer Doc on Programming Search Engine
+
+commit 231e899bbac063545c57243ca8ddbec29493a8ad
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 14:52:03 2022 -0700
+
+    copy and pasted style files to other folders
+
+commit 0da475b911645cb37917d10319a11974967799c4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 14:42:38 2022 -0700
+
+    copy and pasted URLs to respective search pages
+
+commit 468c6a067743c4baf6c71015cd33e44e6fab979d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 14:24:16 2022 -0700
+
+    > Changed font color and background color.
+    
+    > Included "Google" text
+
+commit 9406c21f3151d2ba41b32404c9735654b9f5dab2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 10:25:05 2022 -0700
+
+    Stylized alternative links
+
+commit a6ed6eb5a35b9eb9e0d9b393d4302ce6796927e0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 10:11:07 2022 -0700
+
+    Added padding to inputs
+
+commit 5866b5f1aa1dc772ee719356546313cbd757eae9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 10:01:42 2022 -0700
+
+    stylized input elements
+
+commit b1ccb9cfa5ba7bf852aa350b12a4495a46cd0467
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 09:47:18 2022 -0700
+
+    Sucessfully implemented flexbox
+
+commit acc97d25a6507bfec1ddb11eb7a19546d8418667
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 09:34:38 2022 -0700
+
+    search bar is centered, but bias'd towards left side
+
+commit 3e7fd7f891fa221239639b6f5f1d5b66ab3da23d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 09:26:15 2022 -0700
+
+    removed float and clear
+
+commit 81b35556bd0e5532a25b164d060d83df1db8f18f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Wed Aug 10 09:25:59 2022 -0700
+
+    >> float and center didn't work as envisioned
+    
+    link: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear
+
+commit bcf575789cffa8c335f475acc3d55459646ef0fc
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 19:25:30 2022 -0700
+
+    STOPPING SESH
+
+commit 7533c06db22e880cc4e5e1a033f7f4e63232f1aa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 18:42:34 2022 -0700
+
+    trying to center
+
+commit 02d04551af40311873f0b64b52bead64969fc7cc
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 18:36:34 2022 -0700
+
+    CREATED: folder and failes for images and advance
+
+commit 7549b2bb79c35ee732ea251c5fb7b57e08228ba0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:50:16 2022 -0700
+
+    CREATED: Search folder
+
+commit 097dae34e47e8d2d61b63aa106060a6bbe92d321
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:46:46 2022 -0700
+
+    >> RENAMED: folders related to lesson
+    
+    >> CREATED: Project folders
+
+commit ad803ea3fb55db0b76a6756345f254f78862d60e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:38:32 2022 -0700
+
+    FINISH: lecture 0
+
+commit 68f10393a89f4d0fbe632b0e2b64134c9ec7a0fa
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:31:29 2022 -0700
+
+    CREATED: files related to message
+
+commit 6946e0ec71e7b96e1f5e08ab94fdd567c1b70221
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:20:19 2022 -0700
+
+    >> REFINED: variables.scss
+    
+    > which was automatically compiled to variables.css
+
+commit 9d38f0ffd707785b87e54224758d65c216e300db
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 17:15:59 2022 -0700
+
+    LOCALLY INSTALLED: sass
+
+commit e7b7c2a6da2ac38926197cdbc37decb012e59591
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 12:02:22 2022 -0700
+
+    stopping sesh since connected to hotspot, which eliminates downloading items
+
+commit 95bba4d14cea41f6eade84b5f38452ee51965af7
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:58:37 2022 -0700
+
+    renamed: "filename.scss" to "variable.scss"
+
+commit 45fdc767defe9d3af0d0c2a669b9a428830907f0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:57:43 2022 -0700
+
+    created: filename.scss
+
+commit 48a4dad6c64e231be41272cddfcb193e15fd03c5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:55:35 2022 -0700
+
+    styilzed: MobileResponsive.html
+
+commit 14f4f4bff5d34352659b8009bf6ce848b8ade6b8
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:52:06 2022 -0700
+
+    created: MobileResponsive.html
+
+commit 61fae0d41779d23c15df238bd8adc5387ef791b9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:50:14 2022 -0700
+
+    removed deadspace
+
+commit 942f0632c1110b449ddaf92b7272e208e5803226
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:39:33 2022 -0700
+
+    stylizied: bootstrap.html
+
+commit d101f285242a4e6a2ae56be23d0d7e5104a5c8d9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:26:15 2022 -0700
+
+    wrote html section...
+    
+    CSS needs to be added.
+
+commit bf135a863f0183b04072830a6d38970002870686
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:22:23 2022 -0700
+
+    created: bootstrap.html
+
+commit 579bfaad7cb776e80f5d41c0998b8a108eae3ef9
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:12:51 2022 -0700
+
+    stylized
+
+commit c76b71369aadcb9e1b5ecc6b58442bd0825ba25b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:07:35 2022 -0700
+
+    created: MyWebPage.html
+
+commit 4b9557aef341d1f5fbc8057f76efeab1990e5aa6
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:05:25 2022 -0700
+
+    forgot: 'id="container"'
+
+commit 0754095b9330e81b9ec5b190fa48352d51bf484a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:04:46 2022 -0700
+
+    added style
+
+commit 0e2e08f90550ccb68320c53fecaa094fa9c13630
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Tue Aug 9 11:01:36 2022 -0700
+
+    created: ScreenSize.html
+
+commit fbc79ca6afeea6c68194424be8fc3d63cf0f7fc2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:52:57 2022 -0700
+
+    uploading session log
+
+commit a1f14c4d5213547177d3b41af8ea254348480ccb
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:49:45 2022 -0700
+
+    added style change that loooks for window size changes
+
+commit d1b2dbccf657592a2ec42e06ce71cdf25d2bb9e5
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:46:36 2022 -0700
+
+    created: responsive.html
+
+commit d277f4088b0760322afe7c0b9e74b04a991de3de
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:22:19 2022 -0700
+
+    used hover
+
+commit 8bf21bd2863ed97104e6c9134d9817ede5379327
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:20:19 2022 -0700
+
+    created: hover.html
+
+commit f0f5886aa2dfb8c1a6297cd65b76644e6b2e8048
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:19:17 2022 -0700
+
+    stylized attribute.html
+
+commit 8311ceb5c1655665343841c9a5889186b14b8f7a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:17:23 2022 -0700
+
+    created: attribute.html
+
+commit 70c4d6b2899a39416374cba0d1974d8ff7803521
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:12:41 2022 -0700
+
+    created: descendment.html
+
+commit fad8fba0c7d438b8c3b896bd13a05db1b79c4096
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:10:47 2022 -0700
+
+    Lecture texitng about CSS's specificity
+
+commit cb98fc3bfa2f2d4019936df0dba5e65cb9b9500a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:08:34 2022 -0700
+
+    using class to style multiple elements
+
+commit 563564998618f5623d8600406906b1b373e0d98d
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:07:06 2022 -0700
+
+    stylizing only heading 1 (id is foo) by using #foo
+
+commit f99fb4ef76b5814158e43415aad359797e49fad1
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:05:25 2022 -0700
+
+    stylizing style.html with multiple headings
+
+commit 98e1205a16663565e9f538f2331b728f81b7c495
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:03:35 2022 -0700
+
+    added paddding
+
+commit 01b29026b3001ef3049a2b95230f3ea6425dcb8a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:02:23 2022 -0700
+
+    added border-collaspe to table
+
+commit d6ccb52485371bea76bae4009a4894ea72f51826
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:01:16 2022 -0700
+
+    condensed and remove redunant style code
+
+commit e904e768127f2e8bfa6d7e6cfa988de07be0c522
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 13:00:43 2022 -0700
+
+    have redunant code
+
+commit 12205017bc078cc0a9ed34a7fbed3dcd181da56b
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:59:13 2022 -0700
+
+    updated font.html
+
+commit f580200c8cc7eeaa8b7f25955da60a6ee495cb83
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:56:40 2022 -0700
+
+    created: font.html
+
+commit 862db180325fd819cc1d6447fc417f103ecd5a1e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:53:58 2022 -0700
+
+    stylized: size.html
+
+commit 59d37e4eeeac0cf98ce52018b3515234d5ec534a
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:51:27 2022 -0700
+
+    created: size.html
+
+commit 84c98e25e4715d75f7ecc6527841daa9e301edb2
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:49:54 2022 -0700
+
+    style.html now references to style.css
+
+commit 6e98f370602919ebe1575e636ca9d5ed754ce548
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:48:19 2022 -0700
+
+    created css.style
+
+commit 617b4db3bc53744b542115a7f7593546ef9ccf6c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:31:02 2022 -0700
+
+    testing stylizing body
+
+commit 586d6cbeec702c3ff6b19ef524d8e566f90c2b16
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:30:33 2022 -0700
+
+    moved style into "<head>" section
+
+commit dd270fc3f3955fda12d94db8938856b1757f9038
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:28:34 2022 -0700
+
+    added style
+
+commit 22cf9fdccd60fb43bc8bffc8ddfeb48b8718a9ae
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:24:49 2022 -0700
+
+    > started on CSS section of lecture
+    
+    > created "CSS.html"
+
+commit 9e587fd34f21e21a36c6e532c7fbc7bd7d56fd52
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:19:54 2022 -0700
+
+    lecture code "form1.html"
+
+commit eaa7b814764996c7305c6f7eb4a3f39c80bab63f
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:18:56 2022 -0700
+
+    finished form.html
+
+commit 062b6bd920d806393a64b8beaa82bad401744d4c
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:17:06 2022 -0700
+
+    created form.html
+
+commit cc008477b52cf20dda03e493f78c7229220e7d67
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:11:04 2022 -0700
+
+    created Tables.html
+
+commit bb95ace9a39dbec7e456fb30f9fdb44d12209752
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:10:02 2022 -0700
+
+    created link.html
+
+commit fddc3ce76eb5a166eee9584b970cb0a55c4ea3ff
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:09:08 2022 -0700
+
+    finished image.html
+
+commit 764a6aa38c10fbc58939307834cefd88f9a09343
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:06:22 2022 -0700
+
+    created image.html
+
+commit 68b43317bde045b15b93aca8c823f1a40264b50e
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:03:56 2022 -0700
+
+    finished list.html
+
+commit 855e6654e76d337ad36bc0afaa2b83a91d8ab296
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 12:02:11 2022 -0700
+
+    created list.html
+
+commit cd6ae5d33d87206b1df547a0f39f60fb675228d4
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 11:59:48 2022 -0700
+
+    created "headings.html"
+
+commit 61f7574aef0530937d61b357b38e5170a065a7c0
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 02:05:55 2022 -0700
+
+    created HTML for hello
+
+commit 3b5234a23b4a944986f20448563f322c9405b545
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 01:46:14 2022 -0700
+
+    created README.md
+
+commit 932d217eb40ffa958a280e69a19440210db69802
+Author: WaToArt <93100367+WaToArt@users.noreply.github.com>
+Date:   Mon Aug 8 01:45:07 2022 -0700
+
+    First push

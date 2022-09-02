@@ -1,0 +1,48 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block body %}
+<div class='results'>
+    <h2>Results for "{{ search_input }}": </h2>
+</div>
+
+<div class='results_list'>
+    <ul>
+        {% for entry in similar_results %}
+            <li> 
+                <a href="{% url 'ency:entry' entry %}"> 
+                    {{entry}} 
+                </a> 
+            </li>
+
+        {% empty %}
+        <h1> THERE'S NOTHING :'[ </h1>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+{% comment %} {% for result in results %}
+    <li> {{result}} </li>
+
+{% empty %}
+<h3> EMPTY SADGE :'[ </h3>
+
+{% endfor %} {% endcomment %}
+
+{% endblock body %}
+
+
+<!-- 
+    Psuedocode:
+
+    <h1> Results: 'user_search_input' </h1>
+
+    <ul> django for loop of list:
+        if 'user_search_input' in item:
+            <li> 
+                <a href='link to item'> {{item}}  </a>
+            </li>
+    </ul>
+
+-->

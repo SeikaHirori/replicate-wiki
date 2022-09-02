@@ -1,0 +1,55 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+Create
+{% endblock title %}
+
+
+
+{% block body %}
+{% if message %}
+    <div>
+        <h1> {{message}}  </h1>
+    </div>
+    <br>
+{% endif %}
+
+
+<div>
+    <h1> Create a new entry! :3 </h1>
+    <br>
+    <h4> Please type in the <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target='_blank' rel='noopener noreferrer' >Markdown format</a>.</h4> <!-- RFER 15 -->
+</div>
+<br>
+<div>
+    <form action="{% url 'ency:create' %}" method='post'>
+        {% csrf_token %}
+        
+        {% comment %} <label for="text_title">Title:</label>
+        <br>
+        <input type="text" name="user_title" required>
+        <br>
+
+        <label for="text_body">Body:</label>
+        <br>
+        <textarea name="user_content" id="user_content" cols="30" rows="10" required>{% if previous_body %}{{previous_body}}{% endif %}</textarea><!-- RFER 14 -->
+        <br> {% endcomment %}
+        {{form}}
+        <br>
+        <input type="submit">
+    </form>
+        
+</div>
+
+<!-- Psuedocode:
+
+    - Title for new entry
+        - Backend side:
+            - Verify whether title of new entry exists already
+    - Body for typing text of new entry
+
+    - Button: 'Create entry'
+
+-->
+
+{% endblock body %}

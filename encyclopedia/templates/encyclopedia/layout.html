@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="sidebar col-lg-2 col-md-3">
+                <h2>Wiki</h2>
+
+                {% comment %} <form> <!-- Original verison-->
+                    {% csrf_token %}
+                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+                </form> {% endcomment %}
+                <div>
+                    <form action="{% url 'ency:search'%}" method='get' name='form_search'> <!-- Revison v1-->
+                        {% csrf_token %}
+                        <input class="search" type="text" name="q_search" placeholder="Search Encyclopedia">
+
+                        <!--
+                            Psuedocode for search bar:
+                            - send 'user_search_input' to function that handles grabbing entries.
+
+                            - use if statement to direct to three outputs:
+                                1. Directly send to entry if it is in database
+                                2. Show results that contain similar results
+                                3. If substring wasn't found, display that nothing exists
+                        -->
+                    </form>
+                </div>
+                
+
+                <div>
+                    <a href=" {% url 'ency:index' %} "> Home</a>
+                </div>
+                <div>
+                    <a href=" {% url 'ency:create' %} "> Create New Page </a> <!-- Revision -->
+                </div>
+                <div>
+
+                    {% url 'ency:entry' random_entry as random_url %} <!-- RFER 6 -->
+                    <a href="{{ random_url }}"> Random page </a> <!-- Revision 2--> 
+
+                    {% comment %} <a href="{% url 'ency:entry' random_entry %}"> Random page 2</a> <!-- Revision 2--> <!-- This method works; this style might be used for search bar. -->  {% endcomment %}
+                </div>
+                {% block nav %}
+                {% endblock nav %}
+            </div>
+            <div class="main col-lg-10 col-md-9">
+                {% block body %}
+                {% endblock body %}
+            </div>
+        </div>
+
+    </body>
+</html>
