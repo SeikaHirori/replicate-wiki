@@ -6,4 +6,4 @@
 # External links
 
 - Blog
-> **TBA**
+> https://watoart.blogspot.com/2022/09/wiki-replicating-wikipedia-writing.html
